@@ -14,12 +14,14 @@ alpha = 0.95
 beta = 0.5
 l = 100
 plot_gng = True
+train = False
 
-_, dataset, _ = load_open3d(path_single_pcd)
+if (train is True):
+    _, dataset, _ = load_open3d(path_single_pcd)
 
-gng = GrowingNeuralGas(max_neurons, max_iter, max_age, eb, en, alpha, beta, l, dataset[0])
-gng3d = gng.learn()
-save_es_vs_json(gng3d, path_es_vs_result)
+    gng = GrowingNeuralGas(max_neurons, max_iter, max_age, eb, en, alpha, beta, l, dataset[0])
+    gng3d = gng.learn()
+    save_es_vs_json(gng3d, path_es_vs_result)
 
 if (plot_gng is True):
     plot_gng3d(path_es_vs_result)
