@@ -71,7 +71,7 @@ Here are some brief results by performing the GNG algorithm.
 The input data, aquired through Kinect device:
 
 
-[scene_1_open3D.webm](images_videos%2Fscene_1_open3D.mp4)
+[Scene 1 Input PCL](images_videos%2Fscene_1_open3D.mp4)
 
 In the figure below it is possible to see the comparison of the image on the left, which represents the point cloud input. And on the right, we have the resulting GNG from that input.
 
